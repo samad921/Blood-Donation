@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page </title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <!-- Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- responsive stylesheet -->
+  <link rel="stylesheet" href="css/responsive.css">
+
+      <link href="Style\dist\css\bootstrap.min.css" rel="stylesheet">
+
+<link href="Style\dist\css\bootstrap.css" rel="stylesheet">
+
+<link href="css\simple-sidebar.css" rel="stylesheet">
+
+<link href="Style\dist\css\bootstrap.theme.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="Style\dist\font.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+ .btn 
+ {
+ 	margin: 5px;
+ 	width: 300px;
+ }
+</style>
+</head>
+<body>
+<center>
+<h1>Login!</h1>
+
+<form class="form" action='/login' method='post'>
+  <input type="text" name='username' class="text" placeholder='username' required>
+  <input type="password" name='password' placeholder='password' required> <br />
+  <input type="submit" class="btn btn-primary"name="" value="Login">
+
+        <% if(!currentUser){ %>
+          <li><a href="/register"> Signup</a></li>
+        <% }else{ %>
+          <li>You are Already Login</li>
+        <% } %>
+</form>
+</center>
+</body>
+
+</html>
